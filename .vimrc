@@ -55,6 +55,9 @@ set hlsearch
 set list
 set listchars=tab:»-,trail:-,extends:»,precedes:«,nbsp:%
 
+" change buffer with no save
+set hidden
+
 autocmd InsertLeave * set nopaste
 
 colorscheme nord
