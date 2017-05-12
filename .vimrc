@@ -13,7 +13,6 @@ call dein#begin(expand('~/.vim/dein'))
   " JavaScript
   call dein#add('pangloss/vim-javascript')
   call dein#add('mxw/vim-jsx')
-  call dein#add('othree/yajs.vim')
 
   " Editor
   call dein#add('scrooloose/nerdtree')
