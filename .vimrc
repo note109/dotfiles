@@ -35,6 +35,10 @@ call dein#begin(expand('~/.vim/dein'))
   let g:neomake_javascript_enabled_makers = ['eslint']
   let g:eslint_path = system('PATH=$(npm bin):$PATH && which eslint')
   let g:neomake_javascript_eslint_exe = substitute(g:eslint_path, '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
+  " auto complete
+  call dein#add('rhysd/github-complete.vim')
+  call dein#add('junegunn/vim-emoji')
+  set completefunc=emoji#complete " complete emoji by C-x C-u
 call dein#end()
 
 nnoremap <silent><C-t> :NERDTreeToggle<CR>
